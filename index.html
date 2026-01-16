@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khéweul Lou - Restaurant Sénégalais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <span class="circle-logo">K</span> Khéweul <span class="text-orange ms-1">lou</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plats">Nos Plats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cafe">Café Touba</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-orange px-4">Commander</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="accueil">
+        <div class="text-center">
+            <h1 class="display-3 fw-bold mb-4">L'Authentique Goût du Sénégal</h1>
+            <div class="d-flex gap-3 justify-content-center">
+                <a href="#plats" class="btn btn-orange btn-lg">Voir le menu</a>
+                <a href="#" class="btn btn-outline-light btn-lg">Commander</a>
+            </div>
+        </div>
+
+        <div class="stats-card container shadow">
+            <div class="row text-center text-dark">
+                <div class="col-4 border-end">
+                    <h4 class="fw-bold mb-0 text-orange">100%</h4>
+                    <small class="text-muted text-uppercase">Fait Maison</small>
+                </div>
+                <div class="col-4 border-end">
+                    <h4 class="fw-bold mb-0 text-success">Teranga</h4>
+                    <small class="text-muted text-uppercase">Hospitalité</small>
+                </div>
+                <div class="col-4">
+                    <h4 class="fw-bold mb-0 text-orange">4.9</h4>
+                    <small class="text-muted text-uppercase">Note moyenne</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plats" class="py-5 mt-5" style="background-color: pink;">
+        <div class="container py-5 text-center">
+            <span class="badge rounded-pill px-3 py-2 mb-3" style="background: #e6f4ee; color: #1a7e53;">Nos Spécialités</span>
+            <h2 class="fw-bold mb-4">Saveurs du <span class="text-orange">Sénégal</span></h2>
+            <p class="text-muted mx-auto mb-5" style="max-width: 600px;">Découvrez nos plats traditionnels préparés selon les recettes authentiques.</p>
+
+            <div class="row g-4 text-start">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card plat-card h-100 position-relative">
+                        <span class="price-tag">1500 fcfa</span>
+                        <img src="images/photo2.jpeg" class="card-img-top" alt="Thieb" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <div class="text-orange mb-2 small">★★★★★ <span class="text-muted">(5.0)</span></div>
+                            <h5 class="card-title fw-bold">Thiéboudienne</h5>
+                            <p class="card-text text-muted small">Le plat national sénégalais : riz au poisson et légumes frais.</p>
+                            <a href="#" class="btn btn-orange w-100">🛒 Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card plat-card h-100 position-relative">
+                        <span class="price-tag">1000 fcfa</span>
+                        <img src="images/photo3.jpeg" class="card-img-top" alt="Mafé" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <div class="text-orange mb-2 small">★★★★★ <span class="text-muted">(5.0)</span></div>
+                            <h5 class="card-title fw-bold">Mafé</h5>
+                            <p class="card-text text-muted small">Ragoût onctueux à la sauce arachide servi avec du riz blanc.</p>
+                            <a href="#" class="btn btn-orange w-100">🛒 Commander</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-3">
+                    <div class="card plat-card h-100 position-relative">
+                        <span class="price-tag">2000 fcfa</span>
+                        <img src="images/photo4.jpeg" class="card-img-top" alt="Yassa" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <div class="text-orange mb-2 small">★★★★★ <span class="text-muted">(5.0)</span></div>
+                            <h5 class="card-title fw-bold">Yassa Poulet</h5>
+                            <p class="card-text text-muted small">Poulet grillé mariné au citron avec oignons caramélisés et moutarde...</p>
+                            <a href="#" class="btn btn-orange w-100">🛒 Commander</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-3">
+                    <div class="card plat-card h-100 position-relative">
+                        <span class="price-tag">1000 fcfa</span>
+                        <img src="images/photo6.jpg" class="card-img-top" alt="Domoda" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <div class="text-orange mb-2 small">★★★★★ <span class="text-muted">(5.0)</span></div>
+                            <h5 class="card-title fw-bold">Domoda</h5>
+                            <p class="card-text text-muted small">Spécialité gambienne adoptée au Sénégal : viande en sauce tomate-...</p>
+                            <a href="#" class="btn btn-orange w-100">🛒 Commander</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="cafe" class="py-5 bg-success">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="images/photo5.jpeg" alt="Café Touba" class="img-touba">
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge bg-light text-success border px-3 py-2 mb-3">☕ Boisson Traditionnelle</span>
+                    <h2 class="display-5 fw-bold mb-4">Café <span class="text-orange">Touba</span></h2>
+                    <p class="lead text-muted mb-4">Découvrez le légendaire Café Touba, une boisson emblématique du Sénégal. Préparé selon la tradition avec du poivre de Selim (djar) et des clous de girofle, ce café épicé vous transporte directement au cœur de Touba.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-2"><i class="fas fa-check-circle text-orange me-2"></i>Café 100% arabica torréfié artisanalement</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-orange me-2"></i> Épices traditionnelles : djar et clous de girofle</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-orange me-2"></i> Préparation authentique à la sénégalaise</li>
+						 <li class="mb-2"><i class="fas fa-check-circle text-orange me-2"></i> Servi chaud avec ou sans lait</li>
+                    </ul>
+                    <div class="d-flex gap-4">
+                        <div><h4 class="text-orange fw-bold mb-0">100f</h4><small>Petit</small></div>
+                        <div><h4 class="text-orange fw-bold mb-0">300f</h4><small>Moyen</small></div>
+                        <div><h4 class="text-orange fw-bold mb-0">500f</h4><small>Grand</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="pb-4">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold d-flex align-items-center text-white mb-3" href="#">
+                        <span class="circle-logo">K</span> Khéweul <span class="text-orange ms-1">lou</span>
+                    </a>
+                    <p>Restaurant sénégalais authentique. Thieb, Mafé, Yassa et plus encore. Bienvenue chez nous !</p>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.facebook.com/login/?locale=fr_FR" class="fs-4"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="fs-4"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/?lang=fr" class="fs-4"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Liens</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#plats">Nos Plats</a></li>
+                        <li><a href="#cafe">Café</a></li>
+						 <li><a href="#cafe">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Nos Plats</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Thiéboudienne</a></li>
+                        <li><a href="#">Yassa Poulet</a></li>
+                        <li><a href="#">Mafé Viande</a></li>
+						<li><a href="#">Domoda</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contact</h5>
+					<p><strong>Propriétaire :</strong> Omar Gaye</p>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt me-2 text-orange"></i> Dakar, Sénégal</p>
+                    <p class="mb-1"><i class="fas fa-phone me-2 text-orange"></i> +221 78 164 64 24</p>
+                    <p class="mb-1"><i class="fas fa-envelope me-2 text-orange"></i> oog.gaye@gmail.com</p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center small">
+                © 2026 Khéweul lou - Restaurant Sénégalais. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

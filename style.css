@@ -1,0 +1,103 @@
+        :root { --orange-k: #f38222; --dark-k: #2b1d16; }
+				body { font-family: 'Poppins', sans-serif; 
+					background-color: #f8f8f8; 
+					}
+        .text-orange { 
+					color: var(--orange-k); 
+					}
+        .bg-orange { 
+				background-color: var(--orange-k);
+				color: white; 
+		}
+        .btn-orange { 
+			background-color: var(--orange-k); 	
+			color: white; border-radius: 8px; 
+			font-weight: 600;
+			}
+        .btn-orange:hover { 
+					background-color: #d9731d; 
+					color: white; 
+					}
+        
+        /* Custom Header */
+        .circle-logo { 
+					background: var(--orange-k); 
+					color: white; 
+					width: 35px; height: 35px; 
+					border-radius: 50%; 
+					display: inline-flex; 
+					align-items: center; justify-content: center;
+					font-weight: bold; 
+					margin-right: 5px;
+					}
+        
+        /* Hero Section */
+        .hero { 	
+				background: linear-gradient(rgba(0,0,0,0.5), 
+				rgba(0,0,0,0.5)), url('images/photo1.jpeg') center/cover;
+				background-repeat: no-repeat; 
+				background-position: center;
+				height: 70vh; display: flex; 
+				align-items: center; 
+				justify-content: center; 
+				color: white; 
+				position: relative;
+                background-size: cover;
+					
+				}
+        .stats-card { 
+				position: absolute; 
+				bottom: -30px; 
+				background: white;
+				border-radius: 15px; 
+				box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+				padding: 20px; width: 90%;
+				max-width: 800px; }
+
+        /* Plats */
+        .plat-card { 
+					border: none;
+					border-radius: 20px; 
+					overflow: hidden; 
+					transition: 0.3s;
+					box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+					
+					}
+        .plat-card:hover { 
+						transform: translateY(-10px); 
+						}
+        .price-tag { 
+					position: absolute; 
+					top: 15px; 
+					right: 15px; 
+					background: var(--orange-k); 
+					color: white; 
+					padding: 5px 12px; 
+					border-radius: 10px; 
+					font-weight: bold; 
+					}
+        
+        /* Café Touba */
+        .img-touba { 
+					border-radius: 30px; 
+					box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
+					width: 100%; 
+					}
+        
+        /* Footer */
+        footer {
+				background-color: var(--dark-k); 
+				color: #b5a49c; 
+				padding-top: 60px;
+				}
+        footer h5 { 
+					color: white; 
+					margin-bottom: 20px; 
+					}
+        footer a { 
+				color: #b5a49c; 
+				text-decoration: none; 
+				transition: 0.3s; }
+        footer a:hover { 
+					color: var(--orange-k); 
+					}

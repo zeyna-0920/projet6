@@ -1,0 +1,527 @@
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.circle {
+    background-color: #f38222;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.brand-name span {
+    color: #f38222;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+/* Correction : "nav" au lieu de ".nav" car c'est une balise */
+nav ul li a.active {
+    color: #333;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #f38222;
+}
+
+/* Boutons */
+.btn-orange {
+    background-color: #f38222;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #d9731d;
+}
+
+.btn-white {
+    background-color: white;
+    color: #1a7e53; 
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+}
+
+/* Section Hero */
+.hero {
+    position: relative;
+    height: 80vh;
+    /* Remplace photo1.jpeg par ton image réelle */
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/photo1.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Stats Card */
+.stats-card {
+    position: absolute;
+    bottom: -40px;
+    background: white;
+    display: flex;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 700px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-green {
+    color: #27ae60;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 50px;
+    background-color: #eee;
+}
+
+/* Footer Motif */
+.pattern-footer {
+    height: 150px;
+    margin-top: 100px; /* Laisse de la place pour la stats-card */
+    background-color: #f38222; /* Couleur de secours */
+    background-image: url('images/pattern.png'); /* Utilise un petit motif répétitif ici */
+    background-repeat: repeat;
+    opacity: 0.1;
+}
+
+
+* Section Nos Plats */
+.specialities {
+    padding: 100px 50px;
+    text-align: center;
+    background-color: #fdfaf5; /* Fond légèrement crème comme sur l'image */
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.badge {
+    background-color: #e6f4ee;
+    color: #1a7e53;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+	text-align:center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+.section-header h2 span {
+    color: #f38222;
+}
+
+.section-header p {
+    color: #777;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Grille des plats */
+.plats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plat-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.plat-card:hover {
+    transform: translateY(-10px);
+}
+
+.plat-image {
+    position: relative;
+    height: 200px;
+}
+
+.plat-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #f38222;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.plat-info {
+    padding: 20px;
+}
+
+.rating {
+    color: #f38222;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.rating span {
+    color: #aaa;
+    margin-left: 5px;
+}
+
+.plat-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.plat-info p {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn-order-small {
+    display: block;
+    background-color: #f38222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-order-small:hover {
+    background-color: #d9731d;
+}
+
+/* Section Café Touba */
+.cafe-touba {
+    padding: 100px 50px;
+    background-color: #fff;
+}
+
+.container-touba {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.touba-image {
+    flex: 1;
+}
+
+.touba-image img {
+    width: 100%;
+    border-radius: 30px; /* Bordures arrondies comme sur la capture */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.touba-content {
+    flex: 1;
+}
+
+.badge-green {
+    background-color: #e6f4ee;
+    color: #1a7e53;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.touba-content h2 {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.touba-content h2 span {
+    color: #f38222;
+}
+
+.touba-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.touba-features {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.touba-features li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+/* Les puces orange personnalisées */
+.touba-features li::before {
+    content: "●";
+    color: #f38222;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.touba-prices {
+    display: flex;
+    gap: 40px;
+}
+
+.price-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-val {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f38222;
+}
+
+.price-size {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Responsive pour tablettes et mobiles */
+@media (max-width: 968px) {
+    .container-touba {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .touba-features li {
+        padding-left: 0;
+    }
+    
+    .touba-features li::before {
+        display: none;
+    }
+    
+    .touba-prices {
+        justify-content: center;
+    }
+}
+/* Footer */
+.footer {
+    background-color: #2b1d16; /* Marron foncé comme sur l'image */
+    color: #ffffff;
+    padding: 80px 50px 30px;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.footer-desc {
+    color: #b5a49c;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* On réutilise tes styles de logo pour le footer */
+.footer .logo .brand-name {
+    color: #ffffff;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #b5a49c;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #f38222;
+}
+
+.contact-item {
+    margin: 10px 0;
+    color: #b5a49c;
+}
+
+/* Icônes Sociales */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 35px;
+    height: 35px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #f38222;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7a6a62;
+}
+
+.legal a {
+    color: #7a6a62;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

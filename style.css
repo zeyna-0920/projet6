@@ -18,6 +18,21 @@
 					background-color: #d9731d; 
 					color: white; 
 					}
+								
+		.navbar ul li a {
+			text-decoration: none;
+			color: #555;
+			font-size: 0.95rem;
+			transition: 0.3s;
+			}
+			.navbar ul li a.active {
+							color: #333;
+							font-weight: 600;
+										}
+
+		.navbar ul li a:hover {
+						color: #f38222;
+						}
         
         /* Custom Header */
         .circle-logo { 
